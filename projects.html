@@ -26,7 +26,15 @@
 <ul>
 <li><a href="#conway-s-game-of-life">Conway's Game of Life</a></li>
 <li><a href="#aes-encryptor">AES Encryptor</a></li>
-<li><a href="#nixie-clock">Nixie clock</a></li>
+<li>
+<a href="#nixie-clock">Nixie clock</a>
+<ul class="ul-inline">
+<li><a href="#nixie-clock-avr-atmega32-program">AVR ATmega32 program</a></li>
+<li><a href="#nixie-clock-tubes-driver">Nixie clock tubes driver</a></li>
+<li><a href="#nixie-clock-main-board">Nixie clock main board</a></li>
+<li><a href="#nixie-clock-180v-power-supply">180V power supply</a></li>
+</ul>
+</li>
 <li><a href="#tsp">TSP</a></li>
 </ul>
 </div>
@@ -107,8 +115,170 @@ and was verified using test vectors from <a href="documents/nistspecialpublicati
 </div>
 
 <h2 id="nixie-clock">Nixie clock</h2>
+<h3 id="nixie-clock-avr-atmega32-program">AVR ATmega32 program</h3>
 <div class="wrapper">
-Under construction
+<div class="wrapper-flex project">
+<div class="flex-width-40">
+
+<div class="project-description justified">
+AVR ATmega32 program that is running on <a href="#nixie-clock-main-board">Nixie clock main board</a>.<br><br>
+The program is responsible for
+adjusting brightness of the Nixie tubes according to environment brightness,
+timekeeping with synchronization over GPS every 24 hours
+and sending the time data to <a href="#nixie-clock-tubes-driver">Nixie clock tubes driver</a>.
+</div>
+
+<div class="skills">
+<div class="smallbox">C</div>
+<div class="smallbox">AVR</div>
+</div>
+
+<div class="repository">
+<a href="https://github.com/Kotbenek/NixieClock" target="_blank" rel="noopener noreferrer">Repository</a>
+</div>
+
+</div>
+
+<div class="flex-width-60">
+<a href="images/nixie-clock.jpg" target="_blank" rel="noopener noreferrer">
+<img class="project-image" src="images/nixie-clock.jpg">
+</a>
+</div>
+
+</div>
+
+</div>
+
+<h3 id="nixie-clock-tubes-driver">Nixie clock tubes driver</h3>
+<div class="wrapper">
+<div class="wrapper-flex project">
+<div class="flex-width-40">
+
+<div class="project-description justified">
+PCB responsible for driving Nixie tubes.<br><br>
+Board overview:
+<ul class="ul-inline">
+<li>6P6C connector used for interfacing the <a href="#nixie-clock-main-board">Nixie clock main board</a></li>
+<li>180V DC input (powered by <a href="#nixie-clock-180v-power-supply">180V power supply</a>)</li>
+<li>6 11-pin connectors for 6 Nixie tubes:
+<ul class="ul-inline">
+<li>10 cathode pins, statically driving each digit</li>
+<li>1 anode pin, with dimming capability (PWM)</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div class="skills">
+<div class="smallbox">KiCad</div>
+<div class="smallbox">PCB design</div>
+<div class="smallbox">Soldering</div>
+</div>
+
+<div class="repository">
+<a href="https://github.com/Kotbenek/Nixie-clock-tubes-driver" target="_blank" rel="noopener noreferrer">Repository</a>
+</div>
+
+</div>
+
+<div class="flex-width-60">
+<a href="images/nixie-clock-tubes-driver_1.png" target="_blank" rel="noopener noreferrer">
+<img class="project-image" src="images/nixie-clock-tubes-driver_1.png">
+</a>
+
+<hr style="height: 0.5em; margin: 0em; visibility: hidden;">
+
+<a href="images/nixie-clock-tubes-driver_2.png" target="_blank" rel="noopener noreferrer">
+<img class="project-image" src="images/nixie-clock-tubes-driver_2.png">
+</a>
+</div>
+
+</div>
+
+</div>
+
+<h3 id="nixie-clock-main-board">Nixie clock main board</h3>
+<div class="wrapper">
+<div class="wrapper-flex project">
+<div class="flex-width-40">
+
+<div class="project-description justified">
+Main PCB of the Nixie clock.<br><br>
+Board overview:
+<ul class="ul-inline">
+<li>12V AC input</li>
+<li>Rectified, smoothed 12V AC output powering the <a href="#nixie-clock-180v-power-supply">180V power supply</a></li>
+<li>ATmega32 AVR microcontroller as the heart of the Nixie clock</li>
+<li>Photoresistor input for PWM Nixie tubes dimming</li>
+<li>Two inputs for external buttons used for timezone setting (UTC offset)</li>
+<li>GPS module connector with power on/off capability</li>
+<li>6P6C connector used for interfacing the <a href="#nixie-clock-tubes-driver">Nixie clock tubes driver</a> board</li>
+<li>AVR ISP connector for programming</li>
+</ul>
+</div>
+
+<div class="skills">
+<div class="smallbox">AVR</div>
+<div class="smallbox">KiCad</div>
+<div class="smallbox">PCB design</div>
+<div class="smallbox">Soldering</div>
+</div>
+
+<div class="repository">
+<a href="https://github.com/Kotbenek/Nixie-clock-main-board" target="_blank" rel="noopener noreferrer">Repository</a>
+</div>
+
+</div>
+
+<div class="flex-width-60">
+<a href="images/nixie-clock-main-board_1.png" target="_blank" rel="noopener noreferrer">
+<img class="project-image" src="images/nixie-clock-main-board_1.png">
+</a>
+
+<hr style="height: 0.5em; margin: 0em; visibility: hidden;">
+
+<a href="images/nixie-clock-main-board_2.png" target="_blank" rel="noopener noreferrer">
+<img class="project-image" src="images/nixie-clock-main-board_2.png">
+</a>
+</div>
+
+</div>
+
+</div>
+
+<h3 id="nixie-clock-180v-power-supply">180V power supply</h3>
+<div class="wrapper">
+<div class="wrapper-flex project">
+<div class="flex-width-40">
+
+<div class="project-description justified">
+180V power supply PCB.<br><br>
+Rectified, smoothed 12V AC input (around 16V DC),
+180V DC output.
+
+
+</div>
+
+<div class="skills">
+<div class="smallbox">KiCad</div>
+<div class="smallbox">PCB design</div>
+<div class="smallbox">Soldering</div>
+</div>
+
+<div class="repository">
+<a href="https://github.com/Kotbenek/180V-power-supply" target="_blank" rel="noopener noreferrer">Repository</a>
+</div>
+
+</div>
+
+<div class="flex-width-60">
+<a href="images/180V-power-supply_1.png" target="_blank" rel="noopener noreferrer">
+<img class="project-image" src="images/180V-power-supply_1.png">
+</a>
+</div>
+
+</div>
+
 </div>
 
 <h2 id="tsp">TSP</h2>

@@ -72,7 +72,7 @@
 	border-style: none solid none solid;
 	background-color: #C0C0C0;
 	padding: 1em;
-	height: calc(100% - 12em + 2px - 2px);
+	height: calc(100% - 12em);
 	max-width: 50em;
 	overflow-x: hidden;
 	margin: auto;
@@ -178,7 +178,8 @@
 	background-color: #A0A0A0;
 	border: 1px solid #B0B0B0;
 	border-radius: 0.5em;
-	width: 16em;
+	width: calc(40% - 0.5em);
+	margin-left: 0.3em;
 }
 
 .project
@@ -210,6 +211,12 @@
 	font-family: Liberation-Mono;
 	font-size: 1.1em;
 	width: 100%;
+}
+
+.ul-inline
+{
+	padding-top: 0em;
+	padding-bottom: 0em;
 }
 
 .footer
@@ -253,6 +260,11 @@ h1
 h2
 {
 	margin: auto;
+}
+
+h3
+{
+	margin: 0.5em 0em 0em 0em;
 }
 
 ul
