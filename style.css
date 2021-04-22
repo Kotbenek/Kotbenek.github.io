@@ -85,7 +85,26 @@
 	overflow: hidden;
 }
 
-@media (min-width: 52em) 
+.wrapper-flex
+{
+	display: block;
+}
+
+.flex-width-33
+{
+	padding: 0.5em;
+	margin: auto;
+	display: block;
+}
+
+.flex-width-67
+{
+	padding: 0.5em;
+	margin: auto;
+	display: block;
+}
+
+@media screen and (width >= 52em) 
 {
 	.wrapper-flex
 	{
@@ -109,29 +128,21 @@
 	}
 }
 
-@media (max-width: calc(52em - 1px)) 
+.flex-width-40
 {
-	.wrapper-flex
-	{
-		display: block;
-	}
-
-	.flex-width-33
-	{
-		padding: 0.5em;
-		margin: auto;
-		display: block;
-	}
-
-	.flex-width-67
-	{
-		padding: 0.5em;
-		margin: auto;
-		display: block;
-	}
+	padding: 0.5em;
+	margin: auto;
+	display: block;
 }
 
-@media (min-width: 52em) 
+.flex-width-60
+{
+	padding: 0.5em;
+	margin: auto;
+	display: block;
+}
+
+@media screen and (width >= 52em) 
 {
 	.flex-width-40
 	{
@@ -147,23 +158,6 @@
 		width: 60%;
 		height: 100%;
 		margin: auto;
-	}
-}
-
-@media (max-width: calc(52em - 1px)) 
-{
-	.flex-width-40
-	{
-		padding: 0.5em;
-		margin: auto;
-		display: block;
-	}
-
-	.flex-width-60
-	{
-		padding: 0.5em;
-		margin: auto;
-		display: block;
 	}
 }
 
@@ -229,7 +223,15 @@
 	margin-left: 0.3em;
 }
 
-@media (min-width: 52em) 
+.project
+{
+	border: 1px solid #B0B0B0;
+	border-radius: 0.5em;
+	background-color: #A0A0A0;
+	display: block;
+}
+
+@media screen and (width >= 52em) 
 {
 	.project
 	{
@@ -237,17 +239,6 @@
 		border-radius: 0.5em;
 		background-color: #A0A0A0;
 		display: flex;
-	}
-}
-
-@media (max-width: calc(52em - 1px)) 
-{
-	.project
-	{
-		border: 1px solid #B0B0B0;
-		border-radius: 0.5em;
-		background-color: #A0A0A0;
-		display: block;
 	}
 }
 
