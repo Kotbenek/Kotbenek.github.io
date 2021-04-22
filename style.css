@@ -85,7 +85,7 @@
 	overflow: hidden;
 }
 
-@media only screen and (min-width: 52em) 
+@media (min-width: 52em) 
 {
 	.wrapper-flex
 	{
@@ -109,7 +109,7 @@
 	}
 }
 
-@media only screen and (max-width: calc(52em - 1px)) 
+@media (max-width: calc(52em - 1px)) 
 {
 	.wrapper-flex
 	{
@@ -131,7 +131,7 @@
 	}
 }
 
-@media only screen and (min-width: 52em) 
+@media (min-width: 52em) 
 {
 	.flex-width-40
 	{
@@ -150,7 +150,7 @@
 	}
 }
 
-@media only screen and (max-width: calc(52em - 1px)) 
+@media (max-width: calc(52em - 1px)) 
 {
 	.flex-width-40
 	{
@@ -229,7 +229,7 @@
 	margin-left: 0.3em;
 }
 
-@media only screen and (min-width: 52em) 
+@media (min-width: 52em) 
 {
 	.project
 	{
@@ -240,7 +240,7 @@
 	}
 }
 
-@media only screen and (max-width: calc(52em - 1px)) 
+@media (max-width: calc(52em - 1px)) 
 {
 	.project
 	{
