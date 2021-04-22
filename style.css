@@ -85,41 +85,86 @@
 	overflow: hidden;
 }
 
-.wrapper-flex
+@media only screen and (min-width: 52em) 
 {
-	display: flex;
+	.wrapper-flex
+	{
+		display: flex;
+	}
+
+	.flex-width-33
+	{
+		padding: 0.25em;
+		width: 33%;
+		height: 100%;
+		margin: auto;
+	}
+
+	.flex-width-67
+	{
+		padding: 0.5em;
+		width: 67%;
+		height: 100%;
+		margin: auto;
+	}
 }
 
-.flex-width-33
+@media only screen and (max-width: calc(52em - 1px)) 
 {
-	padding: 0.25em;
-	width: 33%;
-	height: 100%;
-	margin: auto;
+	.wrapper-flex
+	{
+		display: block;
+	}
+
+	.flex-width-33
+	{
+		padding: 0.5em;
+		margin: auto;
+		display: block;
+	}
+
+	.flex-width-67
+	{
+		padding: 0.5em;
+		margin: auto;
+		display: block;
+	}
 }
 
-.flex-width-67
+@media only screen and (min-width: 52em) 
 {
-	padding: 0.5em;
-	width: 67%;
-	height: 100%;
-	margin: auto;
+	.flex-width-40
+	{
+		padding: 0.3em;
+		width: 40%;
+		height: 100%;
+		margin: auto;
+	}
+
+	.flex-width-60
+	{
+		padding: 0.45em;
+		width: 60%;
+		height: 100%;
+		margin: auto;
+	}
 }
 
-.flex-width-40
+@media only screen and (max-width: calc(52em - 1px)) 
 {
-	padding: 0.3em;
-	width: 40%;
-	height: 100%;
-	margin: auto;
-}
+	.flex-width-40
+	{
+		padding: 0.5em;
+		margin: auto;
+		display: block;
+	}
 
-.flex-width-60
-{
-	padding: 0.45em;
-	width: 60%;
-	height: 100%;
-	margin: auto;
+	.flex-width-60
+	{
+		padding: 0.5em;
+		margin: auto;
+		display: block;
+	}
 }
 
 .stars
@@ -141,6 +186,8 @@
 	border-radius: 50%;
 	max-width: 100%;
 	max-height: 100%;
+	display: block;
+	margin: auto;
 }
 
 .smallbox
@@ -178,15 +225,30 @@
 	background-color: #A0A0A0;
 	border: 1px solid #B0B0B0;
 	border-radius: 0.5em;
-	width: calc(40% - 0.5em);
+	width: 18em;//calc(40% - 0.5em);
 	margin-left: 0.3em;
 }
 
-.project
+@media only screen and (min-width: 52em) 
 {
-	border: 1px solid #B0B0B0;
-	border-radius: 0.5em;
-	background-color: #A0A0A0;
+	.project
+	{
+		border: 1px solid #B0B0B0;
+		border-radius: 0.5em;
+		background-color: #A0A0A0;
+		display: flex;
+	}
+}
+
+@media only screen and (max-width: calc(52em - 1px)) 
+{
+	.project
+	{
+		border: 1px solid #B0B0B0;
+		border-radius: 0.5em;
+		background-color: #A0A0A0;
+		display: block;
+	}
 }
 
 .project-image
@@ -194,6 +256,7 @@
 	max-width: 100%;
 	max-height: 100%;
 	display: block;
+	margin: auto;
 }
 
 .project-description
