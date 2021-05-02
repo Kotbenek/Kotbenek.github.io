@@ -273,6 +273,11 @@
 	padding-bottom: 0em;
 }
 
+.certificate
+{
+	font-family: Liberation-Sans-Bold;
+}
+
 .footer
 {
 	background-color: #F1F1F1;
