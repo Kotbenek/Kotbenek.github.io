@@ -33,7 +33,6 @@
 
 .navigation
 {
-	overflow: hidden;
 	background-color: #222222;
 	display: flex;
 	justify-content: space-evenly;
@@ -65,16 +64,28 @@
 	outline: 1px solid #2A2A2A;
 }
 
+.sticky-div-top
+{
+	top: 0;
+	position: sticky;
+	padding: 0em;
+}
+
+.sticky-div-bottom
+{
+	bottom: 0;
+	position: sticky;
+	padding: 0em;
+}
+
 .content
 {
-	overflow: auto;
 	border: 1px #969696;
 	border-style: none solid none solid;
 	background-color: #C0C0C0;
 	padding: 1em;
-	height: calc(100% - 12em);
+	min-height: calc(100vh - 12em);
 	max-width: 50em;
-	overflow-x: hidden;
 	margin: auto;
 }
 
@@ -219,7 +230,7 @@
 	background-color: #A0A0A0;
 	border: 1px solid #B0B0B0;
 	border-radius: 0.5em;
-	width: 18em;//calc(40% - 0.5em);
+	width: 18em;
 	margin-left: 0.3em;
 }
 
@@ -304,7 +315,7 @@ body
 
 html
 {
-	height: 100%;
+	
 }
 
 h1
