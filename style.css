@@ -232,6 +232,7 @@
 	border-radius: 0.5em;
 	width: 18em;
 	margin-left: 0.3em;
+	margin-bottom: 2.5em;
 }
 
 .project
@@ -240,6 +241,11 @@
 	border-radius: 0.5em;
 	background-color: #A0A0A0;
 	display: block;
+}
+
+.project-title
+{
+	scroll-margin-top: 6.2em;
 }
 
 @media screen and (width >= 52em) 
