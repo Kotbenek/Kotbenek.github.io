@@ -38,6 +38,13 @@
 </ul>
 </li>
 <li><a href="#tsp">TSP</a></li>
+<li>
+<a href="#plant-care-system">Plant care system</a>
+<ul class="ul-inline">
+<li><a href="#plant-care-system-pcb">Plant care system PCB</a></li>
+<li><a href="#plant-care-system-firmware">Plant care system firmware</a></li>
+</ul>
+</li>
 </ul>
 </div>
 
@@ -343,6 +350,107 @@ Repository
 <a href="images/tsp_2.png" target="_blank" rel="noopener noreferrer">
 <img class="project-image" src="images/tsp_2.png">
 </a>
+</div>
+
+</div>
+
+</div>
+
+<h2 class="project-title" id="plant-care-system">Plant care system</h2>
+<h3 class="project-title" id="plant-care-system-pcb">Plant care system PCB</h3>
+<div class="wrapper">
+<div class="project">
+<div class="flex-width-40">
+
+<div class="project-description justified">
+PCB of the Plant care system that can keep the plant alive by supplying water and additional light in specified intervals and with specified duration.<br><br>
+Board overview:
+<ul class="ul-inline">
+<li>ATmega32 AVR microcontroller as the heart of the Plant care system</li>
+<li>Terminal block connector for external pump</li>
+<li>Galvanically isolated terminal block connector for external lamp</li>
+<li>AVR ISP connector for AVR programming</li>
+<li>5V DC input with battery backup:
+<ul class="ul-inline">
+<li>18650 battery holder for battery operation</li>
+<li>TP4056 board for battery charging</li>
+<li>Additional circuitry enabling simultaneous battery charging and system operation</li>
+</ul>
+</li>
+<li>Microswitch buttons for system parameters setup</li>
+<li>4-digit 7-segment display for system parameters</li>
+<li>LEDs indicating the currently displayed parameter on 7-segment display</li>
+</ul>
+</div>
+
+<div class="skills">
+<div class="smallbox">AVR</div>
+<div class="smallbox">KiCad</div>
+<div class="smallbox">PCB design</div>
+<div class="smallbox">Soldering</div>
+</div>
+
+
+<a href="https://github.com/Kotbenek/Plant-care-system" target="_blank" rel="noopener noreferrer">
+<div class="repository">
+Repository
+</div>
+</a>
+
+</div>
+
+<div class="flex-width-60">
+<a href="images/plant-care-system_pcb_1.png" target="_blank" rel="noopener noreferrer">
+<img class="project-image" src="images/plant-care-system_pcb_1.png">
+</a>
+
+<hr style="height: 0.5em; margin: 0em; visibility: hidden;">
+
+<a href="images/plant-care-system_pcb_2.png" target="_blank" rel="noopener noreferrer">
+<img class="project-image" src="images/plant-care-system_pcb_2.png">
+</a>
+
+<hr style="height: 0.5em; margin: 0em; visibility: hidden;">
+
+<a href="images/plant-care-system_pcb_3.jpg" target="_blank" rel="noopener noreferrer">
+<img class="project-image" src="images/plant-care-system_pcb_3.jpg">
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<h3 class="project-title" id="plant-care-system-firmware">Plant care system firmware</h3>
+<div class="wrapper">
+<div class="project">
+<div class="flex-width-40">
+
+<div class="project-description justified">
+AVR ATmega32 program that is running on <a href="#plant-care-system-pcb">Plant care system</a> board.<br><br>
+The program is responsible for keeping the plant alive by driving the water pump and the external lamp according to set parameters which can be adjusted.
+</div>
+
+<div class="skills">
+<div class="smallbox">C</div>
+<div class="smallbox">AVR</div>
+</div>
+
+<a href="https://github.com/Kotbenek/Plant-care-system-firmware" target="_blank" rel="noopener noreferrer">
+<div class="repository">
+Repository
+</div>
+</a>
+
+</div>
+
+<div class="flex-width-60">
+
+<a href="images/plant-care-system_pcb_4.jpg" target="_blank" rel="noopener noreferrer">
+<img class="project-image" src="images/plant-care-system_pcb_4.jpg">
+</a>
+
 </div>
 
 </div>
