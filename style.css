@@ -61,7 +61,12 @@
 {
 	background-color: #333333;
 	color: #F1F1F1;
-	outline: 1px solid #2A2A2A;
+	border: 1px;
+	border-style: none solid none solid;
+	border-left-color: #2A2A2A;
+	border-right-color: #2A2A2A;	
+	padding-left: calc(0.75em - 1px);
+	padding-right: calc(0.75em - 1px);
 }
 
 .sticky-div-top
