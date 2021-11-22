@@ -120,7 +120,7 @@
 	display: block;
 }
 
-@media screen and (width >= 52em) 
+@media screen and (min-width: 53em)
 {
 	.wrapper-flex
 	{
@@ -158,7 +158,7 @@
 	display: block;
 }
 
-@media screen and (width >= 52em) 
+@media screen and (min-width: 53em)
 {
 	.flex-width-40
 	{
@@ -253,7 +253,7 @@
 	scroll-margin-top: 6.2em;
 }
 
-@media screen and (width >= 52em) 
+@media screen and (min-width: 53em)
 {
 	.project
 	{
