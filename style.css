@@ -300,6 +300,26 @@
 	font-family: Liberation-Sans-Bold;
 }
 
+.publication-author
+{
+	font-weight: bold;
+}
+
+.publication-title
+{
+	font-style: italic;
+}
+
+.publication-journal
+{
+	font-weight: bold;
+}
+
+.publication-link
+{
+	font-family: Liberation-Sans-Bold;
+}
+
 .footer
 {
 	background-color: #F1F1F1;
