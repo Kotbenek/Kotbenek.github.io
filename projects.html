@@ -2,507 +2,413 @@
 <html>
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=0;">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="images/photo.png">
-<title>Dominik Piątkowski</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0;">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/photo.png">
+    <title>Dominik Piątkowski</title>
 </head>
 
 <body>
-<div class="sticky-div-top">
-<div class="header">Dominik Piątkowski</div>
-
-<div class="navigation">
-<a href="index.html">Home</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Contact</a>
-</div>
-</div>
-
-<div class="content">
-<h1>Projects</h1>
-
-<h2>Contents</h2>
-<div class="wrapper contents">
-<ul>
-<li><a href="#conway-s-game-of-life">Conway's Game of Life</a></li>
-<li><a href="#aes-encryptor">AES Encryptor</a></li>
-<li>
-<a href="#nixie-clock">Nixie clock</a>
-<ul class="ul-inline">
-<li><a href="#nixie-clock-avr-atmega32-program">AVR ATmega32 program</a></li>
-<li><a href="#nixie-clock-tubes-driver">Nixie clock tubes driver</a></li>
-<li><a href="#nixie-clock-main-board">Nixie clock main board</a></li>
-<li><a href="#nixie-clock-180v-power-supply">180V power supply</a></li>
-</ul>
-</li>
-<li><a href="#tsp">TSP</a></li>
-<li>
-<a href="#plant-care-system">Plant care system</a>
-<ul class="ul-inline">
-<li><a href="#plant-care-system-pcb">Plant care system PCB</a></li>
-<li><a href="#plant-care-system-firmware">Plant care system firmware</a></li>
-</ul>
-</li>
-<li><a href="#compressor">Compressor</a></li>
-</ul>
-</div>
-
-<h2 class="project-title" id="conway-s-game-of-life">Conway's Game of Life</h2>
-<div class="wrapper">
-<div class="project">
-<div class="flex-width-40">
-
-<div class="project-description justified">
-Conway's Game of Life is a Turing complete cellular automaton.<br><br>
-Due to the fact that it is a zero-player game, the interaction is done by supplying the initial configuration
-as a black and white picture and observing how it evolves.<br><br>
-The rules are simple:<br>
-Any live cell with 2 or 3 live neighbours survives,
-any dead cell with 3 live neighbours becomes a live cell,
-all other live cells die in the next generation,
-all other dead cells stay dead in the next generation.
-</div>
-
-<div class="skills">
-<div class="smallbox">C#</div>
-</div>
-
-<a href="https://github.com/Kotbenek/Conway-s-Game-of-Life" target="_blank" rel="noopener noreferrer">
-<div class="repository">
-Repository
-</div>
-</a>
-
-</div>
-
-<div class="flex-width-60">
-<a href="images/conway-s-game-of-life.png" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/conway-s-game-of-life.png">
-</a>
-</div>
-
-</div>
-
-</div>
-
-<h2 class="project-title" id="aes-encryptor">AES Encryptor</h2>
-<div class="wrapper">
-<div class="project">
-<div class="flex-width-40">
-
-<div class="project-description justified">
-Advanced Encryption Standard (also known as Rijndael) is a specification for data encryption.<br><br>
-AES Encryptor is capable of encrypting and decrypting files (upper picture), plain text and hex data representation (lower picture).<br><br>
-The cipher uses AES in CBC mode and PKCS#7 padding.<br><br>
-This implementation is compliant with <a href="documents/NIST.FIPS.197.pdf" target="_blank" rel="noopener noreferrer">FIPS 197: Advanced Encryption Standard (AES)</a>
-and was verified using test vectors from <a href="documents/nistspecialpublication800-38a.pdf" target="_blank" rel="noopener noreferrer">NIST SP 800-38A 2001 Edition</a>.
-</div>
-
-<div class="skills">
-<div class="smallbox">C#</div>
-</div>
-
-<a href="https://github.com/Kotbenek/AES-Encryptor" target="_blank" rel="noopener noreferrer">
-<div class="repository">
-Repository
-</div>
-</a>
-
-</div>
-
-<div class="flex-width-60">
-<a href="images/aes-encryptor_1.png" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/aes-encryptor_1.png">
-</a>
-
-<hr style="height: 0.5em; margin: 0em; visibility: hidden;">
-
-<a href="images/aes-encryptor_2.png" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/aes-encryptor_2.png">
-</a>
-</div>
-
-</div>
-
-</div>
-
-<h2 class="project-title" id="nixie-clock">Nixie clock</h2>
-<h3 class="project-title" id="nixie-clock-avr-atmega32-program">AVR ATmega32 program</h3>
-<div class="wrapper">
-<div class="project">
-<div class="flex-width-40">
-
-<div class="project-description justified">
-AVR ATmega32 program that is running on <a href="#nixie-clock-main-board">Nixie clock main board</a>.<br><br>
-The program is responsible for
-adjusting brightness of the Nixie tubes according to environment brightness,
-timekeeping with synchronization over GPS every 24 hours
-and sending the time data to <a href="#nixie-clock-tubes-driver">Nixie clock tubes driver</a>.
-</div>
-
-<div class="skills">
-<div class="smallbox">C</div>
-<div class="smallbox">AVR</div>
-</div>
-
-<a href="https://github.com/Kotbenek/NixieClock" target="_blank" rel="noopener noreferrer">
-<div class="repository">
-Repository
-</div>
-</a>
-
-</div>
-
-<div class="flex-width-60">
-<a href="images/nixie-clock.jpg" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/nixie-clock.jpg">
-</a>
-</div>
-
-</div>
-
-</div>
-
-<h3 class="project-title" id="nixie-clock-tubes-driver">Nixie clock tubes driver</h3>
-<div class="wrapper">
-<div class="project">
-<div class="flex-width-40">
-
-<div class="project-description justified">
-PCB responsible for driving Nixie tubes.<br><br>
-Board overview:
-<ul class="ul-inline">
-<li>6P6C connector used for interfacing the <a href="#nixie-clock-main-board">Nixie clock main board</a></li>
-<li>180V DC input (powered by <a href="#nixie-clock-180v-power-supply">180V power supply</a>)</li>
-<li>6 11-pin connectors for 6 Nixie tubes:
-<ul class="ul-inline">
-<li>10 cathode pins, statically driving each digit</li>
-<li>1 anode pin, with dimming capability (PWM)</li>
-</ul>
-</li>
-</ul>
-</div>
-
-<div class="skills">
-<div class="smallbox">KiCad</div>
-<div class="smallbox">PCB design</div>
-<div class="smallbox">Soldering</div>
-</div>
-
-<a href="https://github.com/Kotbenek/Nixie-clock-tubes-driver" target="_blank" rel="noopener noreferrer">
-<div class="repository">
-Repository
-</div>
-</a>
-
-</div>
-
-<div class="flex-width-60">
-<a href="images/nixie-clock-tubes-driver_1.png" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/nixie-clock-tubes-driver_1.png">
-</a>
-
-<hr style="height: 0.5em; margin: 0em; visibility: hidden;">
-
-<a href="images/nixie-clock-tubes-driver_2.png" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/nixie-clock-tubes-driver_2.png">
-</a>
-</div>
-
-</div>
-
-</div>
-
-<h3 class="project-title" id="nixie-clock-main-board">Nixie clock main board</h3>
-<div class="wrapper">
-<div class="project">
-<div class="flex-width-40">
-
-<div class="project-description justified">
-Main PCB of the Nixie clock.<br><br>
-Board overview:
-<ul class="ul-inline">
-<li>12V AC input</li>
-<li>Rectified, smoothed 12V AC output powering the <a href="#nixie-clock-180v-power-supply">180V power supply</a></li>
-<li>ATmega32 AVR microcontroller as the heart of the Nixie clock</li>
-<li>Photoresistor input for PWM Nixie tubes dimming</li>
-<li>Two inputs for external buttons used for timezone setting (UTC offset)</li>
-<li>GPS module connector with power on/off capability</li>
-<li>6P6C connector used for interfacing the <a href="#nixie-clock-tubes-driver">Nixie clock tubes driver</a> board</li>
-<li>AVR ISP connector for programming</li>
-</ul>
-</div>
-
-<div class="skills">
-<div class="smallbox">AVR</div>
-<div class="smallbox">KiCad</div>
-<div class="smallbox">PCB design</div>
-<div class="smallbox">Soldering</div>
-</div>
-
-<a href="https://github.com/Kotbenek/Nixie-clock-main-board" target="_blank" rel="noopener noreferrer">
-<div class="repository">
-Repository
-</div>
-</a>
-
-</div>
-
-<div class="flex-width-60">
-<a href="images/nixie-clock-main-board_1.png" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/nixie-clock-main-board_1.png">
-</a>
-
-<hr style="height: 0.5em; margin: 0em; visibility: hidden;">
-
-<a href="images/nixie-clock-main-board_2.png" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/nixie-clock-main-board_2.png">
-</a>
-</div>
-
-</div>
-
-</div>
-
-<h3 class="project-title" id="nixie-clock-180v-power-supply">180V power supply</h3>
-<div class="wrapper">
-<div class="project">
-<div class="flex-width-40">
-
-<div class="project-description justified">
-180V power supply PCB.<br><br>
-Rectified, smoothed 12V AC input (around 16V DC),
-180V DC output.
-
-
-</div>
-
-<div class="skills">
-<div class="smallbox">KiCad</div>
-<div class="smallbox">PCB design</div>
-<div class="smallbox">Soldering</div>
-</div>
-
-<a href="https://github.com/Kotbenek/180V-power-supply" target="_blank" rel="noopener noreferrer">
-<div class="repository">
-Repository
-</div>
-</a>
-
-</div>
-
-<div class="flex-width-60">
-<a href="images/180V-power-supply_1.png" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/180V-power-supply_1.png">
-</a>
-</div>
-
-</div>
-
-</div>
-
-<h2 class="project-title" id="tsp">TSP</h2>
-<div class="wrapper">
-<div class="project">
-<div class="flex-width-40">
-
-<div class="project-description justified">
-C++ TSP solver.<br><br>
-Travelling Salesman Problem can be defined by the following question:<br><br>
-"Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city?"<br><br>
-The application has the following algorithms implemented:
-<ul class="ul-inline">
-<li>Greedy</li>
-<li>Repetitive greedy</li>
-<li>Brute force</li>
-<li>Simulated annealing</li>
-<li>Genetic</li>
-</ul>
-<br>
-Instance to solve can be loaded in two ways:
-<ul class="ul-inline">
-<li>As matrix (faster, but needs more memory)</li>
-<li>As coords (slower, but needs very little memory) (not available for explicit-type instances)</li>
-</ul>
-<br>
-Loading instance as coords enables loading big instances (e.g. pla85900.tsp or bigger), as matrix representation of such instances could exhaust available memory.
-</div>
-
-<div class="skills">
-<div class="smallbox">C++</div>
-</div>
-
-<a href="https://github.com/Kotbenek/TSP" target="_blank" rel="noopener noreferrer">
-<div class="repository">
-Repository
-</div>
-</a>
-
-</div>
-
-<div class="flex-width-60">
-<a href="images/tsp_1.png" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/tsp_1.png">
-</a>
-
-<hr style="height: 0.5em; margin: 0em; visibility: hidden;">
-
-<a href="images/tsp_2.png" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/tsp_2.png">
-</a>
-</div>
-
-</div>
-
-</div>
-
-<h2 class="project-title" id="plant-care-system">Plant care system</h2>
-<h3 class="project-title" id="plant-care-system-pcb">Plant care system PCB</h3>
-<div class="wrapper">
-<div class="project">
-<div class="flex-width-40">
-
-<div class="project-description justified">
-PCB of the Plant care system that can keep the plant alive by supplying water and additional light in specified intervals and with specified duration.<br><br>
-Board overview:
-<ul class="ul-inline">
-<li>ATmega32 AVR microcontroller as the heart of the Plant care system</li>
-<li>Terminal block connector for external pump</li>
-<li>Galvanically isolated terminal block connector for external lamp</li>
-<li>AVR ISP connector for AVR programming</li>
-<li>5V DC input with battery backup:
-<ul class="ul-inline">
-<li>18650 battery holder for battery operation</li>
-<li>TP4056 board for battery charging</li>
-<li>Additional circuitry enabling simultaneous battery charging and system operation</li>
-</ul>
-</li>
-<li>Microswitch buttons for system parameters setup</li>
-<li>4-digit 7-segment display for system parameters</li>
-<li>LEDs indicating the currently displayed parameter on 7-segment display</li>
-</ul>
-</div>
-
-<div class="skills">
-<div class="smallbox">AVR</div>
-<div class="smallbox">KiCad</div>
-<div class="smallbox">PCB design</div>
-<div class="smallbox">Soldering</div>
-</div>
-
-
-<a href="https://github.com/Kotbenek/Plant-care-system" target="_blank" rel="noopener noreferrer">
-<div class="repository">
-Repository
-</div>
-</a>
-
-</div>
-
-<div class="flex-width-60">
-<a href="images/plant-care-system_pcb_1.png" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/plant-care-system_pcb_1.png">
-</a>
-
-<hr style="height: 0.5em; margin: 0em; visibility: hidden;">
-
-<a href="images/plant-care-system_pcb_2.png" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/plant-care-system_pcb_2.png">
-</a>
-
-<hr style="height: 0.5em; margin: 0em; visibility: hidden;">
-
-<a href="images/plant-care-system_pcb_3.jpg" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/plant-care-system_pcb_3.jpg">
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<h3 class="project-title" id="plant-care-system-firmware">Plant care system firmware</h3>
-<div class="wrapper">
-<div class="project">
-<div class="flex-width-40">
-
-<div class="project-description justified">
-AVR ATmega32 program that is running on <a href="#plant-care-system-pcb">Plant care system</a> board.<br><br>
-The program is responsible for keeping the plant alive by driving the water pump and the external lamp according to set parameters which can be adjusted.
-</div>
-
-<div class="skills">
-<div class="smallbox">C</div>
-<div class="smallbox">AVR</div>
-</div>
-
-<a href="https://github.com/Kotbenek/Plant-care-system-firmware" target="_blank" rel="noopener noreferrer">
-<div class="repository">
-Repository
-</div>
-</a>
-
-</div>
-
-<div class="flex-width-60">
-
-<a href="images/plant-care-system_pcb_4.jpg" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/plant-care-system_pcb_4.jpg">
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<h2 class="project-title" id="compressor">Compressor</h2>
-<div class="wrapper">
-<div class="project">
-<div class="flex-width-40">
-
-<div class="project-description justified">
-C++ file compression utility tool.<br><br>
-Implemented algorithms:
-<ul class="ul-inline">
-<li>Canonical Huffman</li>
-<li>Lempel-Ziv 77</li>
-</ul>
-</div>
-
-<div class="skills">
-<div class="smallbox">C++</div>
-</div>
-
-<a href="https://github.com/Kotbenek/Compressor" target="_blank" rel="noopener noreferrer">
-<div class="repository">
-Repository
-</div>
-</a>
-
-</div>
-
-<div class="flex-width-60">
-<a href="images/compressor.png" target="_blank" rel="noopener noreferrer">
-<img class="project-image" src="images/compressor.png">
-</a>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="sticky-div-bottom">
-<div class="footer">
-© 2021 - 2022 – Dominik Piątkowski
-</div>
-</div>
-
+    <div class="sticky-div-top">
+        <div class="header">Dominik Piątkowski</div>
+
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Projects</h1>
+
+        <h2>Contents</h2>
+        <div class="wrapper contents">
+            <ul>
+                <li><a href="#conway-s-game-of-life">Conway's Game of Life</a></li>
+                <li><a href="#aes-encryptor">AES Encryptor</a></li>
+                <li>
+                    <a href="#nixie-clock">Nixie clock</a>
+                    <ul class="ul-inline">
+                        <li><a href="#nixie-clock-avr-atmega32-program">AVR ATmega32 program</a></li>
+                        <li><a href="#nixie-clock-tubes-driver">Nixie clock tubes driver</a></li>
+                        <li><a href="#nixie-clock-main-board">Nixie clock main board</a></li>
+                        <li><a href="#nixie-clock-180v-power-supply">180V power supply</a></li>
+                    </ul>
+                </li>
+                <li><a href="#tsp">TSP</a></li>
+                <li>
+                    <a href="#plant-care-system">Plant care system</a>
+                    <ul class="ul-inline">
+                        <li><a href="#plant-care-system-pcb">Plant care system PCB</a></li>
+                        <li><a href="#plant-care-system-firmware">Plant care system firmware</a></li>
+                    </ul>
+                </li>
+                <li><a href="#compressor">Compressor</a></li>
+            </ul>
+        </div>
+
+        <h2 class="project-title" id="conway-s-game-of-life">Conway's Game of Life</h2>
+        <div class="wrapper">
+            <div class="project">
+                <div class="flex-width-40">
+                    <div class="project-description justified">
+                        Conway's Game of Life is a Turing complete cellular automaton.<br><br>
+                        Due to the fact that it is a zero-player game, the interaction is done by supplying the initial configuration
+                        as a black and white picture and observing how it evolves.<br><br>
+                        The rules are simple:<br>
+                        Any live cell with 2 or 3 live neighbours survives,
+                        any dead cell with 3 live neighbours becomes a live cell,
+                        all other live cells die in the next generation,
+                        all other dead cells stay dead in the next generation.
+                    </div>
+                    <div class="skills">
+                        <div class="smallbox">C#</div>
+                    </div>
+                    <a href="https://github.com/Kotbenek/Conway-s-Game-of-Life" target="_blank" rel="noopener noreferrer">
+                        <div class="repository">
+                            Repository
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-width-60">
+                    <a href="images/conway-s-game-of-life.png" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/conway-s-game-of-life.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="project-title" id="aes-encryptor">AES Encryptor</h2>
+        <div class="wrapper">
+            <div class="project">
+                <div class="flex-width-40">
+                    <div class="project-description justified">
+                        Advanced Encryption Standard (also known as Rijndael) is a specification for data encryption.<br><br>
+                        AES Encryptor is capable of encrypting and decrypting files (upper picture), plain text and hex data representation (lower picture).<br><br>
+                        The cipher uses AES in CBC mode and PKCS#7 padding.<br><br>
+                        This implementation is compliant with <a href="documents/NIST.FIPS.197.pdf" target="_blank" rel="noopener noreferrer">FIPS 197: Advanced Encryption Standard (AES)</a>
+                        and was verified using test vectors from <a href="documents/nistspecialpublication800-38a.pdf" target="_blank" rel="noopener noreferrer">NIST SP 800-38A 2001 Edition</a>.
+                    </div>
+                    <div class="skills">
+                        <div class="smallbox">C#</div>
+                    </div>
+                    <a href="https://github.com/Kotbenek/AES-Encryptor" target="_blank" rel="noopener noreferrer">
+                        <div class="repository">
+                            Repository
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-width-60">
+                    <a href="images/aes-encryptor_1.png" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/aes-encryptor_1.png">
+                    </a>
+                    <hr style="height: 0.5em; margin: 0em; visibility: hidden;">
+                    <a href="images/aes-encryptor_2.png" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/aes-encryptor_2.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="project-title" id="nixie-clock">Nixie clock</h2>
+        <h3 class="project-title" id="nixie-clock-avr-atmega32-program">AVR ATmega32 program</h3>
+        <div class="wrapper">
+            <div class="project">
+                <div class="flex-width-40">
+                    <div class="project-description justified">
+                        AVR ATmega32 program that is running on <a href="#nixie-clock-main-board">Nixie clock main board</a>.<br><br>
+                        The program is responsible for
+                        adjusting brightness of the Nixie tubes according to environment brightness,
+                        timekeeping with synchronization over GPS every 24 hours
+                        and sending the time data to <a href="#nixie-clock-tubes-driver">Nixie clock tubes driver</a>.
+                    </div>
+                <div class="skills">
+                    <div class="smallbox">C</div>
+                    <div class="smallbox">AVR</div>
+                </div>
+                <a href="https://github.com/Kotbenek/NixieClock" target="_blank" rel="noopener noreferrer">
+                    <div class="repository">
+                        Repository
+                    </div>
+                </a>
+                </div>
+                <div class="flex-width-60">
+                    <a href="images/nixie-clock.jpg" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/nixie-clock.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h3 class="project-title" id="nixie-clock-tubes-driver">Nixie clock tubes driver</h3>
+        <div class="wrapper">
+            <div class="project">
+                <div class="flex-width-40">
+                    <div class="project-description justified">
+                        PCB responsible for driving Nixie tubes.<br><br>
+                        Board overview:
+                        <ul class="ul-inline">
+                            <li>6P6C connector used for interfacing the <a href="#nixie-clock-main-board">Nixie clock main board</a></li>
+                            <li>180V DC input (powered by <a href="#nixie-clock-180v-power-supply">180V power supply</a>)</li>
+                            <li>6 11-pin connectors for 6 Nixie tubes:
+                                <ul class="ul-inline">
+                                    <li>10 cathode pins, statically driving each digit</li>
+                                    <li>1 anode pin, with dimming capability (PWM)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <div class="smallbox">KiCad</div>
+                        <div class="smallbox">PCB design</div>
+                        <div class="smallbox">Soldering</div>
+                    </div>
+                    <a href="https://github.com/Kotbenek/Nixie-clock-tubes-driver" target="_blank" rel="noopener noreferrer">
+                        <div class="repository">
+                            Repository
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-width-60">
+                    <a href="images/nixie-clock-tubes-driver_1.png" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/nixie-clock-tubes-driver_1.png">
+                    </a>
+                    <hr style="height: 0.5em; margin: 0em; visibility: hidden;">
+                    <a href="images/nixie-clock-tubes-driver_2.png" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/nixie-clock-tubes-driver_2.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h3 class="project-title" id="nixie-clock-main-board">Nixie clock main board</h3>
+        <div class="wrapper">
+            <div class="project">
+                <div class="flex-width-40">
+                    <div class="project-description justified">
+                        Main PCB of the Nixie clock.<br><br>
+                        Board overview:
+                        <ul class="ul-inline">
+                            <li>12V AC input</li>
+                            <li>Rectified, smoothed 12V AC output powering the <a href="#nixie-clock-180v-power-supply">180V power supply</a></li>
+                            <li>ATmega32 AVR microcontroller as the heart of the Nixie clock</li>
+                            <li>Photoresistor input for PWM Nixie tubes dimming</li>
+                            <li>Two inputs for external buttons used for timezone setting (UTC offset)</li>
+                            <li>GPS module connector with power on/off capability</li>
+                            <li>6P6C connector used for interfacing the <a href="#nixie-clock-tubes-driver">Nixie clock tubes driver</a> board</li>
+                            <li>AVR ISP connector for programming</li>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <div class="smallbox">AVR</div>
+                        <div class="smallbox">KiCad</div>
+                        <div class="smallbox">PCB design</div>
+                        <div class="smallbox">Soldering</div>
+                    </div>
+                    <a href="https://github.com/Kotbenek/Nixie-clock-main-board" target="_blank" rel="noopener noreferrer">
+                        <div class="repository">
+                            Repository
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-width-60">
+                    <a href="images/nixie-clock-main-board_1.png" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/nixie-clock-main-board_1.png">
+                    </a>
+                    <hr style="height: 0.5em; margin: 0em; visibility: hidden;">
+                    <a href="images/nixie-clock-main-board_2.png" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/nixie-clock-main-board_2.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h3 class="project-title" id="nixie-clock-180v-power-supply">180V power supply</h3>
+        <div class="wrapper">
+            <div class="project">
+                <div class="flex-width-40">
+                    <div class="project-description justified">
+                        180V power supply PCB.<br><br>
+                        Rectified, smoothed 12V AC input (around 16V DC),
+                        180V DC output.
+                    </div>
+                    <div class="skills">
+                        <div class="smallbox">KiCad</div>
+                        <div class="smallbox">PCB design</div>
+                        <div class="smallbox">Soldering</div>
+                    </div>
+                    <a href="https://github.com/Kotbenek/180V-power-supply" target="_blank" rel="noopener noreferrer">
+                        <div class="repository">
+                            Repository
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-width-60">
+                    <a href="images/180V-power-supply_1.png" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/180V-power-supply_1.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="project-title" id="tsp">TSP</h2>
+        <div class="wrapper">
+            <div class="project">
+                <div class="flex-width-40">
+                    <div class="project-description justified">
+                        C++ TSP solver.<br><br>
+                        Travelling Salesman Problem can be defined by the following question:<br><br>
+                        "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city?"<br><br>
+                        The application has the following algorithms implemented:
+                        <ul class="ul-inline">
+                            <li>Greedy</li>
+                            <li>Repetitive greedy</li>
+                            <li>Brute force</li>
+                            <li>Simulated annealing</li>
+                            <li>Genetic</li>
+                        </ul>
+                        <br>
+                        Instance to solve can be loaded in two ways:
+                        <ul class="ul-inline">
+                            <li>As matrix (faster, but needs more memory)</li>
+                            <li>As coords (slower, but needs very little memory) (not available for explicit-type instances)</li>
+                        </ul>
+                        <br>
+                        Loading instance as coords enables loading big instances (e.g. pla85900.tsp or bigger), as matrix representation of such instances could exhaust available memory.
+                    </div>
+                    <div class="skills">
+                        <div class="smallbox">C++</div>
+                    </div>
+                    <a href="https://github.com/Kotbenek/TSP" target="_blank" rel="noopener noreferrer">
+                        <div class="repository">
+                            Repository
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-width-60">
+                    <a href="images/tsp_1.png" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/tsp_1.png">
+                    </a>
+                    <hr style="height: 0.5em; margin: 0em; visibility: hidden;">
+                    <a href="images/tsp_2.png" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/tsp_2.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="project-title" id="plant-care-system">Plant care system</h2>
+        <h3 class="project-title" id="plant-care-system-pcb">Plant care system PCB</h3>
+        <div class="wrapper">
+            <div class="project">
+                <div class="flex-width-40">
+                    <div class="project-description justified">
+                        PCB of the Plant care system that can keep the plant alive by supplying water and additional light in specified intervals and with specified duration.<br><br>
+                        Board overview:
+                        <ul class="ul-inline">
+                            <li>ATmega32 AVR microcontroller as the heart of the Plant care system</li>
+                            <li>Terminal block connector for external pump</li>
+                            <li>Galvanically isolated terminal block connector for external lamp</li>
+                            <li>AVR ISP connector for AVR programming</li>
+                            <li>5V DC input with battery backup:
+                                <ul class="ul-inline">
+                                    <li>18650 battery holder for battery operation</li>
+                                    <li>TP4056 board for battery charging</li>
+                                    <li>Additional circuitry enabling simultaneous battery charging and system operation</li>
+                                </ul>
+                            </li>
+                            <li>Microswitch buttons for system parameters setup</li>
+                            <li>4-digit 7-segment display for system parameters</li>
+                            <li>LEDs indicating the currently displayed parameter on 7-segment display</li>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <div class="smallbox">AVR</div>
+                        <div class="smallbox">KiCad</div>
+                        <div class="smallbox">PCB design</div>
+                        <div class="smallbox">Soldering</div>
+                    </div>
+                    <a href="https://github.com/Kotbenek/Plant-care-system" target="_blank" rel="noopener noreferrer">
+                        <div class="repository">
+                            Repository
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-width-60">
+                    <a href="images/plant-care-system_pcb_1.png" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/plant-care-system_pcb_1.png">
+                    </a>
+                    <hr style="height: 0.5em; margin: 0em; visibility: hidden;">
+                    <a href="images/plant-care-system_pcb_2.png" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/plant-care-system_pcb_2.png">
+                    </a>
+                    <hr style="height: 0.5em; margin: 0em; visibility: hidden;">
+                    <a href="images/plant-care-system_pcb_3.jpg" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/plant-care-system_pcb_3.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h3 class="project-title" id="plant-care-system-firmware">Plant care system firmware</h3>
+        <div class="wrapper">
+            <div class="project">
+                <div class="flex-width-40">
+                    <div class="project-description justified">
+                        AVR ATmega32 program that is running on <a href="#plant-care-system-pcb">Plant care system</a> board.<br><br>
+                        The program is responsible for keeping the plant alive by driving the water pump and the external lamp according to set parameters which can be adjusted.
+                    </div>
+                    <div class="skills">
+                        <div class="smallbox">C</div>
+                        <div class="smallbox">AVR</div>
+                    </div>
+                    <a href="https://github.com/Kotbenek/Plant-care-system-firmware" target="_blank" rel="noopener noreferrer">
+                        <div class="repository">
+                            Repository
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-width-60">
+                    <a href="images/plant-care-system_pcb_4.jpg" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/plant-care-system_pcb_4.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="project-title" id="compressor">Compressor</h2>
+        <div class="wrapper">
+            <div class="project">
+                <div class="flex-width-40">
+                    <div class="project-description justified">
+                        C++ file compression utility tool.<br><br>
+                        Implemented algorithms:
+                        <ul class="ul-inline">
+                            <li>Canonical Huffman</li>
+                            <li>Lempel-Ziv 77</li>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <div class="smallbox">C++</div>
+                    </div>
+                    <a href="https://github.com/Kotbenek/Compressor" target="_blank" rel="noopener noreferrer">
+                        <div class="repository">
+                            Repository
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-width-60">
+                    <a href="images/compressor.png" target="_blank" rel="noopener noreferrer">
+                        <img class="project-image" src="images/compressor.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sticky-div-bottom">
+        <div class="footer">
+            © 2021 - 2022 – Dominik Piątkowski
+        </div>
+    </div>
 </body>
 
 </html>
