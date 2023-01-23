@@ -259,7 +259,7 @@
 
 .project-title
 {
-	scroll-margin-top: calc(6.5em + 3px);
+	scroll-margin-top: calc(6.5em + 4px);
 }
 
 @media screen and (min-width: 53em)
