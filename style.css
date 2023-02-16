@@ -186,18 +186,10 @@
 	}
 }
 
-.stars
-{
-	font-family: Liberation-Mono;
-	font-size: 1.25em;
-	padding-left: 0.5em;
-}
-
 .skills
 {
 	padding: 0.2em;
 	overflow: hidden;
-	margin-bottom: 1em;
 }
 
 .resizable-circle
