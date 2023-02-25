@@ -7,14 +7,14 @@
 
 @font-face {
 	font-family: 'Liberation-Sans';
-	src:url('fonts/Liberation-Sans.ttf.woff') format('woff'); 
+	src:url('fonts/Liberation-Sans.ttf.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Liberation-Sans-Bold';
-	src:url('fonts/Liberation-Sans-Bold.ttf.woff') format('woff'); 
+	src:url('fonts/Liberation-Sans-Bold.ttf.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -49,7 +49,7 @@
 	border-style: solid;
 	border-top-color: #898989;
 	border-right-color: #474747;
-	border-bottom-color: #717171;	
+	border-bottom-color: #717171;
 	border-left-color: #474747;
 	max-width: 52em;
 	margin: auto;
@@ -73,7 +73,7 @@
 	border: 1px;
 	border-style: none solid none solid;
 	border-left-color: #2A2A2A;
-	border-right-color: #2A2A2A;	
+	border-right-color: #2A2A2A;
 	padding-left: calc(0.75em - 1px);
 	padding-right: calc(0.75em - 1px);
 }
