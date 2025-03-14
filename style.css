@@ -1,4 +1,5 @@
-@font-face {
+@font-face
+{
 	font-family: 'Departure-Mono';
 	src:url('fonts/DepartureMono-Regular.woff') format('woff');
 	font-weight: normal;
@@ -12,9 +13,8 @@
 	padding: 0em;
 	border: 1px #AFAFAF;
 	border-style: solid solid none solid;
-	font-size: 2em;
-	height: 2em;
-	max-width: 26em;
+	height: 4rem;
+	max-width: 52rem;
 	margin: auto;
 }
 
@@ -37,7 +37,7 @@
 	border-right-color: #474747;
 	border-bottom-color: #717171;
 	border-left-color: #474747;
-	max-width: 52em;
+	max-width: 52rem;
 	margin: auto;
 }
 
@@ -49,7 +49,6 @@
 	text-align: center;
 	padding: 0.75em;
 	text-decoration: none;
-	font-size: 1em;
 }
 
 .navigation a:hover
@@ -84,8 +83,8 @@
 	border-style: none solid none solid;
 	background-color: #C0C0C0;
 	padding: 1em;
-	min-height: calc(100vh - 12em + 3px);
-	max-width: 50em;
+	min-height: calc(100vh - 12rem + 3px);
+	max-width: 50rem;
 	margin: auto;
 }
 
@@ -96,18 +95,6 @@
 	overflow: hidden;
 }
 
-.wrapper-flex
-{
-	display: block;
-}
-
-.flex-about-me-photo
-{
-	padding: 0.5em;
-	margin: auto;
-	display: block;
-}
-
 .about-me-photo
 {
 	padding: 0em 0em 1em 0em;
@@ -116,43 +103,15 @@
 	width: auto;
 }
 
-.flex-about-me-text
+@media all and (min-width: calc(53 * round(up, 1rem, 6.5px)))
 {
-	padding: 0.5em;
-	margin: auto;
-	display: block;
-}
-
-@media all and (min-width: calc(53 * round(up, 1em, 6.5px)))
-{
-	.wrapper-flex
-	{
-		display: flex;
-	}
-
-	.flex-about-me-photo
-	{
-		padding: 0.25em;
-		width: 30%;
-		height: 100%;
-		margin: auto;
-	}
-
 	.about-me-photo
 	{
 		padding: 0em 1em 1em 0em;
 		margin: auto;
 		display: block;
-		width: 10em;
+		width: 10rem;
 		float: left;
-	}
-
-	.flex-about-me-text
-	{
-		padding: 0.5em;
-		width: 70%;
-		height: 100%;
-		margin: auto;
 	}
 }
 
@@ -170,13 +129,28 @@
 	display: block;
 }
 
-.skills-wrapper
-	{
-		margin-top: 0.5em;
-		margin-bottom: 0.5em;
-	}
+.project-wrapper
+{
 
-@media all and (min-width: calc(53 * round(up, 1em, 6.5px)))
+}
+
+.project-description
+{
+
+}
+
+.skills-wrapper
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.repository-wrapper
+{
+
+}
+
+@media all and (min-width: calc(53 * round(up, 1rem, 6.5px)))
 {
 	.project-container-1
 	{
@@ -263,7 +237,7 @@
 .justified
 {
 	text-align: justify;
-	text-justify: inter-word;
+	text-justify: inter-character;
 }
 
 .contents
@@ -287,10 +261,10 @@
 
 .project-title
 {
-	scroll-margin-top: calc(6.5em + 4px);
+	scroll-margin-top: calc(6.5rem + 4px);
 }
 
-@media all and (min-width: calc(53 * round(up, 1em, 6.5px)))
+@media all and (min-width: calc(53 * round(up, 1rem, 6.5px)))
 {
 	.project
 	{
@@ -308,11 +282,6 @@
 	max-height: 100%;
 	display: block;
 	margin: auto;
-}
-
-.project-description
-{
-
 }
 
 .repository
@@ -370,8 +339,8 @@
 
 .contact-table-platform-logo
 {
-	width: 4em;
-	height: 4em;
+	width: 4rem;
+	height: 4rem;
 }
 
 .contact-table-platform-logo-svg
@@ -401,7 +370,7 @@
 	padding: 0.75em;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 50.5em;
+	max-width: 50.5rem;
 	border: 1px;
 	border-style: solid;
 	border-top-color: #D8D8D8;
@@ -418,13 +387,13 @@ body
 	height: 100%;
 	width: 100%;
 	font-family: Departure-Mono;
-	font-size: round(up, 1em, 6.5px);
 	background-color: #6D6D6D;
 }
 
 html
 {
 	overflow-y: hidden;
+	font-size: round(up, 1rem, 6.5px);
 }
 
 h1
